@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ViewFlipper
+        android:layout_centerInParent="true"
+        android:id="@+id/vf"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:inAnimation="@anim/image_flipper_in"
+        android:outAnimation="@anim/image_flipper_out">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pic1"/>
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pic2"/>
+    </ViewFlipper>
+
+</RelativeLayout>
